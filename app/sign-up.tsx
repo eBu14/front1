@@ -37,8 +37,14 @@ export default function SignUpScreen() {
         }}>
         <View>
           <TextInput
-            style={{ borderWidth: 1, padding: 20, color: 'black' }}
-            placeholderTextColor={'black'}
+            style={{
+              borderWidth: 1,
+              borderColor: 'white',
+              borderRadius: 7,
+              padding: 20,
+              color: 'white',
+            }}
+            placeholderTextColor={'white'}
             autoCapitalize="none"
             value={username}
             placeholder="Username..."
@@ -47,8 +53,14 @@ export default function SignUpScreen() {
         </View>
         <View>
           <TextInput
-            style={{ borderWidth: 1, padding: 20, color: 'black' }}
-            placeholderTextColor={'black'}
+            style={{
+              borderWidth: 1,
+              borderColor: 'white',
+              borderRadius: 7,
+              padding: 20,
+              color: 'white',
+            }}
+            placeholderTextColor={'white'}
             autoCapitalize="none"
             value={password}
             secureTextEntry
@@ -56,12 +68,14 @@ export default function SignUpScreen() {
             onChangeText={(password) => setPassword(password)}
           />
         </View>
-        <TouchableOpacity onPress={onSignUpPress} style={{ padding: 20, backgroundColor: 'green' }}>
+        <TouchableOpacity
+          onPress={onSignUpPress}
+          style={{ padding: 20, backgroundColor: 'grey', borderRadius: 10 }}>
           <Text style={{ textAlign: 'center', color: 'white' }}>Sign up</Text>
         </TouchableOpacity>
-        <Text style={{ textAlign: 'right' }}>
+        <Text style={{ textAlign: 'right', color: "grey"}}>
           Already have account{' '}
-          <Link style={{ color: 'blue' }} href={'/sign-in'}>
+          <Link style={{ color: 'white' }} href={'/sign-in'}>
             Login
           </Link>
         </Text>

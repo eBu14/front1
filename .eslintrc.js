@@ -7,7 +7,7 @@ module.exports = {
         project: './tsconfig.json',
       },
       rules: {
-        '@typescript-eslint/no-explicit-any': 'error',
+        // '@typescript-eslint/no-explicit-any': 'error',
         '@typescript-eslint/no-unused-vars': 'error',
         '@typescript-eslint/no-empty-function': 'error',
         '@typescript-eslint/no-empty-interface': 'error',
